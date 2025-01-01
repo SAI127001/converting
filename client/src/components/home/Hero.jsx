@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, ChartBar } from "lucide-react";
+import { ArrowRight, ChartBar } from "lucide-react";
 import { Link } from "react-router-dom";
 
 // Enhanced Hero Section
@@ -8,10 +8,10 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen relative bg-gradient-to-br from-primary-50 via-white to-primary-50">
+      className="min-h-screen relative bg-gradient-to-br from-primary-50 via-black to-primary-50">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-primary-100 rounded-full opacity-20 blur-3xl"></div>
+        <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-black rounded-full opacity-20 blur-3xl"></div>
         <div className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-primary-100 rounded-full opacity-20 blur-3xl"></div>
       </div>
 
@@ -22,14 +22,12 @@ const Hero = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}>
-            <div className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium">
-              <Sparkles size={16} />
-              Powered by AI
+            <div className="inline-flex items-center gap-2 bg-primary-100 text-black px-4 py-2 rounded-lg text-sm font-medium">
+              Made by Safe Secure Audit
             </div>
 
             <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
-              Transform Your <br />
-              <span className="text-primary-600">Social Media</span> Strategy
+              <span className="text-primary-600">Social Media</span> Analyzer
             </h1>
 
             <p className="text-xl text-gray-600 max-w-xl">

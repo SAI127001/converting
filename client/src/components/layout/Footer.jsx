@@ -21,46 +21,6 @@ const Footer = () => {
             <p className="text-gray-400">
               Transforming social media strategy with AI-powered analytics
             </p>
-            <div className="flex gap-4">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors">
-                <Github size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors">
-                <Mail size={20} />
-              </a>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Quick Links</h4>
-            <div className="flex flex-col gap-2">
-              <Link to={"/"} onClick={scrollToTop}>
-                <button className="text-gray-400 hover:text-white transition-colors text-left">
-                  Features
-                </button>
-              </Link>
-              <Link to={"/"} onClick={scrollToTop}>
-                <button className="text-gray-400 hover:text-white transition-colors text-left">
-                  Team
-                </button>
-              </Link>
-
-              <Link to={"/dashboard"} onClick={scrollToTop}>
-                <button className="text-gray-400 hover:text-white transition-colors text-left">
-                  Get Started
-                </button>
-              </Link>
-            </div>
           </div>
 
           {/* Contact Info */}
@@ -92,7 +52,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-center md:text-left">
-            © 2024 Insightly. All rights reserved.
+            © 2024 All rights reserved.
           </p>
           <div className="flex gap-6 text-gray-400">
             <a href="#" className="hover:text-white transition-colors">

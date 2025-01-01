@@ -1,8 +1,6 @@
 import React from "react";
 import Header from "../components/layout/Header";
 import Hero from "../components/home/Hero";
-import Features from "../components/home/Features";
-import TeamSection from "../components/home/TeamSection";
 import Footer from "../components/layout/Footer";
 
 const Home = () => {
@@ -11,8 +9,6 @@ const Home = () => {
       <Header />
       <main>
         <Hero />
-        <Features />
-        <TeamSection />
       </main>
       <Footer />
     </div>

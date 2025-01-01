@@ -42,34 +42,7 @@ const Header = () => {
             className="text-2xl font-bold text-primary-600 cursor-pointer flex gap-4 justify-center items-center">
             <img src="/insightly.svg" alt="Logo" className="h-10" />
           </div>
-
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
-            <button
-              onClick={() => scrollToSection("features")}
-              className="text-gray-600 hover:text-primary-600 transition-colors">
-              Features
-            </button>
-            <button
-              onClick={() => scrollToSection("team")}
-              className="text-gray-600 hover:text-primary-600 transition-colors">
-              Team
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-gray-600 hover:text-primary-600 transition-colors">
-              Contact
-            </button>
-            <Link
-              to="/dashboard"
-              className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors flex items-center gap-2">
-              Get Started
-              <ArrowRight size={18} />
-            </Link>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <Link
+       <Link
             to="/dashboard"
             className="md:hidden bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors flex items-center gap-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}>

@@ -44,7 +44,7 @@ app.post('/chat', async (req, res) => {
 
     try {
         const response = await axios.post(
-            'https://api.langflow.astra.datastax.com/lf/882442eb-1aec-4e92-9580-e016227c9bfb/api/v1/run/0a074bab-145a-43e4-8063-80830b70ed41?stream=false',
+            'https://api.langflow.astra.datastax.com/lf/a50920d4-b15d-4097-85c4-0678a1b42305/api/v1/run/api?stream=false',
             {
                 input_value,
                 output_type: 'chat',
